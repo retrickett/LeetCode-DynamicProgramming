@@ -18,6 +18,7 @@ int climbStairs(int n){
     if (n>1){
         a[2]=2;
         for (i=3;i<=n;i++){
+            //get number of ways you can get to stair i by taking 1 step a[i-1] or by taking 2 steps a[i-1]
             a[i]=(a[i-1]+a[i-2]);
         }
     }
